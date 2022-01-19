@@ -47,8 +47,8 @@ components:
     uri: outerloop-deploy.yaml
   name: outerloop-deploy
 - attributes:
-    appstudio.has/ephermealStorageLimit: 500Mi
-    appstudio.has/ephermealStorageRequest: 400Mi
+    appstudio.has/ephemeralStorageLimit: 500Mi
+    appstudio.has/ephemeralStorageRequest: 400Mi
     appstudio.has/replicas: 1
     appstudio.has/route: route111
     appstudio.has/storageLimit: 400Mi
