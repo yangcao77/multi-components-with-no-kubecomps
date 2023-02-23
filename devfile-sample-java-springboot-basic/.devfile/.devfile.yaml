@@ -40,11 +40,11 @@ components:
     dockerfile:
       buildContext: .
       rootRequired: false
-      uri: docker/Dockerfile
+      uri: ../docker/Dockerfile
     imageName: java-springboot-image:latest
   name: outerloop-build
 - kubernetes:
-    uri: outerloop-deploy.yaml
+    uri: ../outerloop-deploy.yaml
   name: outerloop-deploy
 - attributes:
     appstudio.has/ephemeralStorageLimit: 500Mi
