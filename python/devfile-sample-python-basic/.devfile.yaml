@@ -19,9 +19,6 @@ components:
         uri: docker/Dockerfile
         buildContext: .
         rootRequired: false
-  - name: outerloop-deploy
-    kubernetes:
-      uri: outerloop-deploy.yaml
   - name: py-web
     container:
       image: quay.io/eclipse/che-python-3.7:nightly
