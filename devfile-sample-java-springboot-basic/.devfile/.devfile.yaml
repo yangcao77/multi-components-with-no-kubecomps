@@ -24,17 +24,6 @@ commands:
 - apply:
     component: outerloop-build
   id: build-image
-- apply:
-    component: outerloop-deploy
-  id: deployk8s
-- composite:
-    commands:
-    - build-image
-    - deployk8s
-    group:
-      isDefault: true
-      kind: deploy
-  id: deploy
 components:
 - image:
     dockerfile:
